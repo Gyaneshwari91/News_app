@@ -11,3 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card{
+  border: 1px solid rgb(1, 1, 22);
+  box-shadow: 0 0 4px rgb(1, 1, 19);
+  width: 150px;
+  margin: 20px;
+}
+
+.cardimage{
+  width:150px;
+}
+
+.cardtitle{
+  text-align:center;
+  font-weight: bold;
+  font-family:Arial;
+  color: black;
+}
+
+.carddescription{
+  text-align:center;
+  font-size: smaller;
+  font-family: Times;
+}
+
+.cardreadmore{
+  color: black;
+  padding: 5px;
+  font-weight: bold;
+  font-size: small;
+}
+
+.news_source_button{
+  background-color: black;
+  color: white;
+  font-size: small;
+}
+
+.news_author{
+  text-align:left;
+  font-size: small;
+  font-family: Times;
+  font-weight: lighter;
+}
+
+.cards_align{
+  display:inline-table;
+}
