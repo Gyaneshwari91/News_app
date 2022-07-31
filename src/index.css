@@ -12,15 +12,19 @@ code {
     monospace;
 }
 
+
+/* Newspage cards CSS  */
 .card{
   border: 1px solid rgb(1, 1, 22);
   box-shadow: 0 0 4px rgb(1, 1, 19);
-  width: 150px;
+  width: 250px;
+  height: 450px;
   margin: 20px;
+  background-color: rgb(255, 255, 255);
 }
 
 .cardimage{
-  width:150px;
+  width:250px;
 }
 
 .cardtitle{
@@ -57,5 +61,26 @@ code {
 }
 
 .cards_align{
-  display:inline-table;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display:flex;
+  background-color: rgb(211, 243, 232);
+  background-image:url('https://images.freecreatives.com/wp-content/uploads/2016/02/Woody-Plank-Background-with-Horizontal-Lines.jpg');
+}
+
+.allnavele{
+  display:flex;
+  flex-wrap: wrap;
+  margin-inline-start:1em;
+  margin-top: 1em;
+  margin-inline-end: 2em;
+  justify-items:flex-start;
+  justify-content:stretch;
+  background-image:url('https://images.freecreatives.com/wp-content/uploads/2016/02/Woody-Plank-Background-with-Horizontal-Lines.jpg');
+}
+
+.navbar{
+  margin-inline-end: 1em;
+  color: black;
+  font-weight:bold;
 }
