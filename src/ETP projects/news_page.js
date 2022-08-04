@@ -1,10 +1,10 @@
 import React from "react";
-import { Card } from "./card";
+import { Card } from "./news_card";
 import { Navbar } from "./navbar";
 export function Newspage(props) {
     return (
         <div>
-            <Navbar/>
+            {/* <Navbar/> */}
 
         <div className="cards_align">
             {

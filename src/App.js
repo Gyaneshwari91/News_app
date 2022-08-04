@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Myfunc from './components/myfunccomp';
+// import Myfunc from './components/myfunccomp';
 import { render } from 'react-dom';
-import {Greet} from './components/myclasscomp';
-import { Message } from './components/myclasscomp';
+// import {Greet} from './components/myclasscomp';
+// import { Message } from './components/myclasscomp';
 import if_else from './Conditional_rendering/if_else';
 import IfElse from './Conditional_rendering/if_else';
 import Elevar from './Conditional_rendering/element_variable';
