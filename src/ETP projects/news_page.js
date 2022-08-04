@@ -4,7 +4,7 @@ import { Navbar } from "./navbar";
 export function Newspage(props) {
     return (
         <div>
-            {/* <Navbar/> */}
+            <Navbar/>
 
         <div className="cards_align">
             {
