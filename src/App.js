@@ -1,45 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-// import Myfunc from './components/myfunccomp';
-import { render } from 'react-dom';
-// import {Greet} from './components/myclasscomp';
-// import { Message } from './components/myclasscomp';
-import if_else from './Conditional_rendering/if_else';
-import IfElse from './Conditional_rendering/if_else';
-import Elevar from './Conditional_rendering/element_variable';
-import Ternop from './Conditional_rendering/ternary_operator';
-import Shortcirop from './Conditional_rendering/shortcircuit_operator';
-import { Onclickevent } from './Event Handling/onclick';
-import {Formonchange} from './Event Handling/onchange';
-import { Formonsubmit } from './Event Handling/onsubmit';
-import { Onmouse } from './Event Handling/onmouse';
-import { Loginpage } from './loginpage';
-import { Testnum } from './TestNumber';
 import { Card } from './ETP projects/Card_on_webpage';
 import { Newspage } from './ETP projects/news_page';
-import sampleNews from './ETP projects/sampleNews.json'
+import sampleNews from './ETP projects/sampleNews.json';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from './ETP projects/home';
+import Contact from "./ETP projects/contact";
+import Register from "./ETP projects/register";
+import Login from "./ETP projects/login";
+import About from "./ETP projects/about";
+import { Navbar } from './ETP projects/navbar';
 function App() {
-    
-      return(<div>
-        {/* <h1>Hi</h1>
-      <Myfunc name='ABC'></Myfunc>
-      <Greet que='Wassup !'></Greet>
-      <Message/> */}
-      {/* <IfElse/> */}
-      {/* <Elevar/> */}
-      {/* <Ternop/> */}
-      {/* <Shortcirop/> */}
-      {/* <Onclickevent/> */}
-      {/* <Formonchange/> */}
-      {/* <Formonsubmit/> */}
-      {/* <Onmouse/> */}
-      {/* <Loginpage/> */}
-      {/* <Testnum/> */}
-      {/* <Card/> */}
-      <Newspage inputdata={sampleNews}/>
-      </div>
-      ) 
-    
+  return (
+  <div>
+    <Navbar />
+    <Routes>
+      <Route path='/' element={<Newspage inputdata={sampleNews} />}></Route>
+      <Route path='/RegisterPage' element={<Register />}></Route>
+      <Route path='/LoginPage' element={<Login />}></Route>
+      <Route path='/AboutPage' element={<About />}></Route>
+      <Route path='/ContactPage' element={<Contact />}></Route>
+    </Routes>
+  </div>
+  )
 }
-
 export default App;
